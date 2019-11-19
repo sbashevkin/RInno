@@ -84,6 +84,7 @@ start_app <- function(
       	# applibpath variable is set in package_manager.R
         # OPT: use `dput` to copy whole .libPaths() and .GlobalEnv contents
         system(sprintf('R -e ".libPaths(c(\'%s\', .libPaths())); shiny::runApp(\'./\', port=1984)"', applibpath), wait = FALSE)
+        Sys.sleep(3)
         # start electron
         system(sprintf('cmd /C "%s"', electron), wait = FALSE)
 
