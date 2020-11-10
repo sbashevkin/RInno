@@ -4,7 +4,10 @@
 \alias{compile_iss}
 \title{Compile ISS}
 \usage{
-compile_iss()
+compile_iss(dir)
+}
+\arguments{
+\item{dir}{The path to the directory in which Inno is installed.}
 }
 \value{
 Installer in \code{dir_out}.
